@@ -24,7 +24,7 @@ const transactionRoute = require("./routes/transaction");
 app.use("/api/auth", authroutes);
 app.use("/api/transaction", transactionRoute);
 //port
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8000;
 
 app.get("/", (req, res) => {
   res.status(200).json({success:true})
