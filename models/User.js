@@ -1,6 +1,7 @@
 var mongoose=require("mongoose");
+const Schema = mongoose.Schema;
 
-var userSchema = new mongoose.Schema({
+var userSchema = new Schema({
     walletAddress:{
         type:String,
         required:true,
@@ -12,4 +13,4 @@ var userSchema = new mongoose.Schema({
     }
 },{timestamps:true});
 
-module.exports = mongoose.model("User",userSchema)
+module.exports = mongoose.model("user",userSchema)

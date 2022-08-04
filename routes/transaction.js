@@ -4,7 +4,7 @@ const {
   addBalance,
   widBalance,
   doubleOrNothing,
-} = require("../controllers/transaction");
+} = require("../controllers/auth");
 
 router.post("/addBalance", addBalance);
 router.post("/widBalance", widBalance);
