@@ -26,6 +26,10 @@ app.use("/api/transaction", transactionRoute);
 //port
 const port = process.env.PORT || 5000;
 
+app.get("/", (req, res) => {
+  res.status(200).json({success:true})
+})
+
 //starting server
 app.listen(port, () => {
   console.log(`app is running at ${port}`);
